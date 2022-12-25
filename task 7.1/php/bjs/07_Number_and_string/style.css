@@ -1,0 +1,36 @@
+.calc-row {
+    height: 100vh;
+    font-family: 'Share Tech Mono', monospace;
+}
+
+.input-window {
+    text-align: end;
+    font-size: x-large;
+}
+
+.firstString {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1px;
+}
+
+.secondString {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1px;
+}
+
+.thirdString {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1px; 
+}
+.fothString {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1px;
+}
+
+.btn.btn-outline-primary.form-control {
+    width: 4.7pc;
+}
