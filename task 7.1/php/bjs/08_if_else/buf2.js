@@ -23,7 +23,7 @@ function igra() {
 if(!isNumeric(minValue )){
     minValue = 0;
 }else{
-    minValue < -999 ? minValue = -999: minValue.valueOf; // if min < -999
+    minValue < -999 || minValue > 999 ? minValue = -999: minValue.valueOf; // if min < -999
 }
 if(!isNumeric(maxValue )){
     maxValue = 100;
