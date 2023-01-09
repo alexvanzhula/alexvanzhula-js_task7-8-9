@@ -1,7 +1,7 @@
 function isNumeric(str) {
-    if (typeof str != "string") return false // we only process strings!  
-    return !isNaN(str) && // use type coercion to parse the entirety of the string ('parseFloat' alone does not do this)...
-           !isNaN(parseFloat(str)) // ...and ensure strings of whitespace fail
+    if (typeof str != "string") return false
+    return !isNaN(str) && 
+           !isNaN(parseFloat(str)) // 
   }
 
 
@@ -31,7 +31,7 @@ if(!isNumeric(maxValue )){
     maxValue > 999  || !isNumeric(minValue )  ? maxValue = 999: maxValue.valueOf;
 }
 
-if(minValue > maxValue){// To not have situatia when min = 5 and max = 3 ...
+if(minValue > maxValue){
     let temp = minValue;
     minValue = maxValue;
     maxValue = temp;
@@ -50,7 +50,7 @@ if(minValue > maxValue){// To not have situatia when min = 5 and max = 3 ...
 
     answerField.innerText = 'Вы загадали число '+getNumberWithLetters(answerNumber)+'?';
 
-    document.getElementById('btnRetry').addEventListener('click', function () {  // eshe knopka 'zanovo' vidat tam i ne rabotala
+    document.getElementById('btnRetry').addEventListener('click', function () {  // eshe knopka 'zanovo' 
         minValue = 0;
         maxValue = 100;
         orderNumber = 0;
@@ -77,11 +77,11 @@ if(minValue > maxValue){// To not have situatia when min = 5 and max = 3 ...
 
     document.getElementById('btnLess').addEventListener('click',  function () {   //knopka "menshe"
         if (gameRun){
-            if (maxValue == minValue){            // == vmesto === i zarabotalo
+            if (maxValue == minValue){            
                 answerField.innerText = badRandomPhrase();
                 gameRun = false;
             } else {
-                maxValue = answerNumber;            // ubral +1, dl9 polucheni9 samogo minimalnogo znacheni9
+                maxValue = answerNumber;            
                 answerNumber  = Math.floor((maxValue + minValue) / 2);
 
                 orderNumber++;
