@@ -1,0 +1,30 @@
+body>h1 {
+    margin-bottom: 50px;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 200px;
+}
+
+.content {
+    display: inline-block;
+    margin-right: 80px;
+    list-style: none;
+    font-size: 32px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.images {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
